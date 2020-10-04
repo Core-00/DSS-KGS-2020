@@ -1,13 +1,10 @@
 const cors = require('cors');
 const express = require('express')
 const app = express()
-const port = 3002;
+const port = 3001;
 const CoreRouter = require('./routes/CoreRouter');
 const ReportRouter = require('./routes/ReportRouter');
 const UserRouter = require('./routes/UserRouter');
-const PublicCoreRouter = require('./routes/PublicCoreRouter');
-const PublicJsonCoreRouter = require('./routes/PublicJsonCoreRouter');
-const PublicReportRouter = require('./routes/PublicReportRouter');
 const BlockAccessDomainMiddleware = require('./middlewares/BlockAccessDomainMiddleware');
 
 // allow request
@@ -42,9 +39,6 @@ app.use('/' , [BlockAccessDomainMiddleware.BlockAccessDomain])
 app.use('/users', UserRouter);
 app.use('/cores', CoreRouter);
 app.use('/reports',ReportRouter);
-app.use('/open/api/v1/cores', PublicCoreRouter);
-app.use('/open/api/v1/reports', PublicReportRouter);
-app.use('/open/api/v1/cores', PublicJsonCoreRouter);
 
 
 function print (path, layer) {

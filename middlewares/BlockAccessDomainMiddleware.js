@@ -10,7 +10,7 @@ exports.BlockAccessDomain = async function(req, res, next) {
     ]
     var allowedIpServer = [
         "192.168.43.220", "10.10.10.200",
-        "202.53.254.36"
+        "202.53.254.36" , "192.168.18.21"
     ]
     
     if (
