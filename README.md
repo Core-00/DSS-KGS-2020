@@ -1,31 +1,41 @@
 # DSS-KGS-2020
-Source code DSS KGS 2020
+Source Code Core Engine DSS KGS 2020
 
 ## Instalasi node.js
 https://www.dumetschool.com/blog/cara-install-node-js-dan-npm-pada-windows
 
 ## How to run?
-1. buat database project1
-2. kemudian import file project1.sql
-3. masuk cmd dan masuk ke path project
-4. jalankan command npm install
-5. jalankan command node index.js
-6. pindah folder /view ke htdocs
-7. jalankan http://localhost/view
+1. Buat database project1
+2. Lakukan import file project1.sql
+3. Masuk ke cmd dan ke path project
+4. Jalankan command npm install
+5. Jalankan command node index.js
+6. Pindah folder /view ke htdocs
+7. Jalankan http://localhost/view
 
 
 ## Deskripsi singkat Core Engine
-- Core Engine KGS adalah tempat Algoritma komputasi dalam bentuk probabilitas untuk menghitung kerentanan seorang pasien terhadap data data yang di input seperti gejala klinis untuk di ambil sebuah hasil presentase dari data data yang sudah di input ke dalam core engine KGS
+- Core Engine DSS KGS adalah algoritma komputasi Knowledge Growing System dengan metode fusi penginferensian informasi ASSA2010 yang saat ini masih dalam proses memperoleh paten nasional. Core Engine DSS KGS menerima masukan berupa data-data gejala klinis pasien melalui platform data mining dengan fasilitas API dan memberikan hasil komputasi dalam bentuk persentase dari nilai probabilitas Degree of Certainty (DoC) terinfeksi Covid-19.
 
 ## Step Instalasi
-- Jika Core Engine sudah dalam .exe maka tinggal di run saja core_engine.exe
-- Juga siapkan database yang akan di gunakan untuk core engine tersebut dengan nama `project1`
+- Jika Core Engine DSS KGS sudah dalam format executable file .exe, maka jalankan core_engine.exe.
+- Agar disiapkan database yang akan digunakan untuk Core Engine DSS KGS dengan nama `project1`
 
 ## Step By Step Flow
-- Pengguna mengirim data berbentuk CSV tentang data data kerentanan pasien yang sudah ditetapkan. CSV file bisa secara Multiple File.
-- Setelah di input file akan di simpan di storage core engine dan akan di buka untuk di baca kedalam format JSON oleh Core Engine agar data data dapat di masukkan kedalam komputasi Core Engine.
-- Setelah Data sudah di komputasi, data akan di simpan di database Core Engine
-- Data yang di simpan tersebut dapat di tampilkan melalui Tampilan grafik yang menyajikan data data yang sudah di kalkulasi oleh Core Engine
+#01 Sistem Terintegrasi dalam Platform TFRIC-19 (main)
+- Subsistem data mining mengirimkan data-data gejala klinis yang dimasukkan melalui user interface data gejala klinis.
+- Data-data gejala klinis dikirimkan ke Core Engine DSS KGS dengan failitas API dan dilakukan komputasi guna memperoleh nilai probabilitas DoC.
+- Hasil-hasil komputasi dalam bentuk persentasi probabilitas DoC dikirimkan untuk ditampilkan hasilnya pada user interface dengan faslitas API.
+- Hasil-hasil komputasi tersebut ditampilkan dalam bentuk Confidence Level berdasarkan data-data gejala klinis.
 
-## Dokumentasi Api
+#02 Sistem Mandiri
+- Pengguna menginstalasi sistem ke komputer mandiri.
+- Pengguna mengirim data berbentuk CSV tentang data-data gejala klinus pasien sesuai dengan format yang sudah ditetapkan. 
+- Pemasukan file CSV ke Core Engine DSS KGS dapat dilakukan secara file by file dan dapat secara simultan Multiple Files.
+- Setelah dimasukkan, file (multiple files) akan disimpan di dalam storage Core Engine DSS KGS. 
+- File (multiple files) akan dibuka dan untuk dibaca dalam format JSON oleh Core Engine DSS KGS untuk dilanjutkan dengan komputasinya.
+- Hasil komputasi Core Engine DSS KGS akan disimpan di dalam database.
+- Data yang disimpan tersebut dapat ditampilkan melalui tampilan grafik yang telah disediakan atau diunduh dalam format .txt.
+
+## Dokumentasi API
 - https://documenter.getpostman.com/view/8651814/SzzhdHsX
