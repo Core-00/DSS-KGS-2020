@@ -13,10 +13,19 @@ https://www.dumetschool.com/blog/cara-install-node-js-dan-npm-pada-windows
 6. pindah folder /view ke htdocs
 7. jalankan http://localhost/view
 
-## Milestone
-<img src="https://i.ibb.co/WDcf6WG/Mailstones-1.png" alt="Mailstones-1" width="100%">
 
-[Link Milestone](https://time.graphics/line/357911)
+## Deskripsi singkat Core Engine
+- Core Engine KGS adalah tempat Algoritma komputasi dalam bentuk probabilitas untuk menghitung kerentanan seorang pasien terhadap data data yang di input seperti gejala klinis untuk di ambil sebuah hasil presentase dari data data yang sudah di input ke dalam core engine KGS
 
-## Docs API
-[Dokumentasi API](https://documenter.getpostman.com/view/6671153/SzYbxcQw?version=latest)
+## Step Instalasi
+- Jika Core Engine sudah dalam .exe maka tinggal di run saja core_engine.exe
+- Juga siapkan database yang akan di gunakan untuk core engine tersebut dengan nama `project1`
+
+## Step By Step Flow
+- Pengguna mengirim data berbentuk CSV tentang data data kerentanan pasien yang sudah ditetapkan. CSV file bisa secara Multiple File.
+- Setelah di input file akan di simpan di storage core engine dan akan di buka untuk di baca kedalam format JSON oleh Core Engine agar data data dapat di masukkan kedalam komputasi Core Engine.
+- Setelah Data sudah di komputasi, data akan di simpan di database Core Engine
+- Data yang di simpan tersebut dapat di tampilkan melalui Tampilan grafik yang menyajikan data data yang sudah di kalkulasi oleh Core Engine
+
+## Dokumentasi Api
+- https://documenter.getpostman.com/view/8651814/SzzhdHsX

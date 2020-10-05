@@ -4,7 +4,6 @@
   "description": "AI",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js",
     "start": "nodemon index.js"
   },
   "author": "Thariq Alfa",
