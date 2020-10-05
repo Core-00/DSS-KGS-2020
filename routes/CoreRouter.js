@@ -53,19 +53,6 @@ var upload_multiple_csv = multer({
 })
 
 router.post(
-	'/excel',
-	upload_excel.single('excel'),
-	CoreController.read
-);
-	
-router.post(
-	'/csv',
-	JWTMiddleware.JWTverify,
-	upload_csv.single('csv'),
-	CoreController.readCSV
-);
-
-router.post(
 	'/multiplecsv',
 	JWTMiddleware.JWTverify,
 	upload_multiple_csv.array('csv[]', 100),

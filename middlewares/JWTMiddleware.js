@@ -27,6 +27,7 @@ exports.JWTverify = function(req, res, next) {
 				return res.status(401).json('Maaf silahkan login untuk melanjutkan.');
 			} else {
 				req.payload = payload;
+				req.jwt_token = token;
 				next();
 			}
 		});
