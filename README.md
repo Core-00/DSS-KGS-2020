@@ -22,14 +22,14 @@ https://www.dumetschool.com/blog/cara-install-node-js-dan-npm-pada-windows
 - Agar disiapkan database yang akan digunakan untuk Core Engine DSS KGS dengan nama `project1`
 
 ## Step By Step Flow
-#01 Sistem Terintegrasi dalam Platform TFRIC-19 (main)
+##01 Sistem Terintegrasi dalam Platform TFRIC-19 (main)
 - Subsistem data mining mengirimkan data-data gejala klinis yang dimasukkan melalui user interface data gejala klinis.
 - Data-data gejala klinis dikirimkan ke Core Engine DSS KGS dengan failitas API dan dilakukan komputasi guna memperoleh nilai probabilitas DoC.
 - Hasil-hasil komputasi dalam bentuk persentasi probabilitas DoC dikirimkan untuk ditampilkan hasilnya pada user interface dengan faslitas API.
 - Hasil-hasil komputasi tersebut ditampilkan dalam bentuk Confidence Level berdasarkan data-data gejala klinis.
 
-#02 Sistem Mandiri
-- Pengguna menginstalasi sistem ke komputer mandiri.
+##02 Sistem Mandiri
+- Pengguna menginstalasi sistem ke server mandiri.
 - Pengguna mengirim data berbentuk CSV tentang data-data gejala klinus pasien sesuai dengan format yang sudah ditetapkan. 
 - Pemasukan file CSV ke Core Engine DSS KGS dapat dilakukan secara file by file dan dapat secara simultan Multiple Files.
 - Setelah dimasukkan, file (multiple files) akan disimpan di dalam storage Core Engine DSS KGS. 
